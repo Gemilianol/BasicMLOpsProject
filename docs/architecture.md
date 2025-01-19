@@ -22,6 +22,9 @@ mlops_project/
 │   └── autoarima.pkl               # Autoarima best model
 │
 ├── notebooks/                      # Jupyter notebooks for exploration and prototyping
+│   └── data_handling.ipynb         # Data handling experimentation
+│   └── EDA.ipynb                   # Exploratory Data Analysis
+│   └── model_trained.ipynb         # Models trained
 │
 ├── src/                            # Source code for the project
 │   ├── app/                        # Flask application code
@@ -37,17 +40,18 @@ mlops_project/
 │   │   └── train_config.yaml       # Model training configuration           
 │   │
 │   ├── data/                       # Data processing scripts
+│   │   ├── __init__.py
 │   │   └── data_processing.py
 │   │
 │   ├── features/                   # Feature engineering scripts
+│   │   ├── __init__.py
 │   │   └── feature_engineering.py
 │   │   └── stationarity.py
 │   │
 │   ├── train/                      # Training scripts
+│   │   ├── __init__.py
 │   │   └── train_model.py
 │   │
-│   ├── mlflow/                     # MLflow integration
-│   │   └── mlflow_tracking.py       # Code to log metrics and models to MLflow
 │   │
 │   ├── airflow/                    # Apache Airflow DAGs
 │   │   └── dags/
@@ -69,6 +73,8 @@ mlops_project/
 │       │   └── service.yaml         # Service configuration
 │       └── helm/
 │           └── charts/             # Helm charts for packaging applications
+|
+├── __init__.py
 │
 ├── tests/                          # Unit and integration tests
 │   ├── test_app.py

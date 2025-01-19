@@ -108,19 +108,19 @@ def get_series():
     # Drop rows with NaN values (Since not all the series has the same time lentgh)
     processed_dataset = processed_dataset.dropna()
     
-    # # Define the output file path
-    output_path = os.path.join(base_dir, "processed/combined_cleaned_data.csv")
+    # # # Define the output file path
+    # output_path = os.path.join(base_dir, "processed/combined_cleaned_data.csv")
     
-    # # If file exists, rename with timestamp
-    if os.path.exists(output_path):
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        output_path = output_path.replace(".csv", f"_{timestamp}.csv")
+    # # # If file exists, rename with timestamp
+    # if os.path.exists(output_path):
+    #     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    #     output_path = output_path.replace(".csv", f"_{timestamp}.csv")
     
-    # # Save to CSV
-    processed_dataset.to_csv(output_path)
-    print(f"File saved as '{output_path}'.")
+    # # # Save to CSV
+    # processed_dataset.to_csv(output_path)
+    # print(f"File saved as '{output_path}'.")
     
     return processed_dataset
 
-if __name__ == "__main__":
-    get_series()
+# if __name__ == "__main__":
+#     get_series()

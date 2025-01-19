@@ -40,6 +40,7 @@ mlops_project/
 │   │
 │   ├── features/                   # Feature engineering scripts
 │   │   └── feature_engineering.py
+│   │   └── stationarity.py
 │   │
 │   ├── train/                      # Training scripts
 │   │   └── train_model.py
@@ -84,3 +85,4 @@ mlops_project/
 │
 ├── .snyk                           # Snyk configuration file for security scanning
 └── prometheus.yml                  # Prometheus configuration file
+└── setup.py                        # Setup configuration file

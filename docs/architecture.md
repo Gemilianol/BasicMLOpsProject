@@ -33,7 +33,8 @@ mlops_project/
 │   ├── config/                     # Configuration files (YAML/JSON)
 │   │   ├── dev.yaml                # Development configuration
 │   │   ├── prod.yaml               # Production configuration
-│   │   └── logging.yaml             # Logging configuration
+│   │   ├── logging.yaml            # Logging configuration
+│   │   └── train_config.yaml       # Model training configuration           
 │   │
 │   ├── data/                       # Data processing scripts
 │   │   └── data_processing.py

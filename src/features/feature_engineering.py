@@ -8,10 +8,10 @@ def process_features():
     Returns:
     - pd.DataFrame: A DataFrame with stationary time series.
     """
-    # Obtener el dataset combinado
+    # Get the series as DataFrame
     combined_data = get_series()
     
-    # Aplicar transformación para hacerlo estacionario
+    # Apply the first difference to all the series on the DataFrame
     stationary_data = make_stationary(combined_data)
     
     return stationary_data

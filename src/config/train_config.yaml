@@ -1,0 +1,18 @@
+train:
+  test_size: 0.2           # Proportion of data to use for testing
+  random_state: 42         # Random seed for reproducibility
+  shuffle: false           # Whether to shuffle data during the train-test split
+
+arima:
+  seasonal: true           # Enable seasonal component in ARIMA
+  seasonal_period: 12      # Seasonal period (e.g., 12 for monthly data)
+  trace: true              # Show ARIMA fitting details in logs
+  error_action: 'ignore'   # Action for errors during ARIMA fitting
+  suppress_warnings: true  # Suppress ARIMA warnings
+
+mlflow:
+  tracking_uri: 'http://127.0.0.1:5000'  # URL for the MLflow tracking server
+  experiment_name: 'mlops_project'       # Name of the MLflow experiment
+  run_name: 'model_training_pipeline'    # Name of the MLflow run
+
+target_variable: 'Inflation'  # Name of the target variable in your dataset

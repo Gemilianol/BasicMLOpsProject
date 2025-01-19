@@ -16,8 +16,8 @@ Key highlights:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/mlops_project.git
-   cd mlops_project
+   git clone https://github.com/Gemilianol/BasicMLOpsProject.git
+   cd BasicMLOpsProject
 
 2. Create and activate a virtual environment:
 python -m venv myvenv

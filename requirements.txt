@@ -24,3 +24,4 @@ tzdata==2024.2
 urllib3==2.3.0
 zipp==3.21.0
 ipykernel
+mlflow
